@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f4f4f4;
     color: #111;
 }
 
@@ -22,19 +22,13 @@ body {
 
 h1 {
     font-size: 28px;
-    margin: 0 0 6px 0;
+    margin: 0;
 }
 
 .tagline {
     color: #777;
     font-size: 14px;
-    margin: 0 0 10px 0;
-}
-
-.date {
-    font-size: 12px;
-    color: #999;
-    margin: 0 0 22px 0;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -42,57 +36,43 @@ h1 {
 }
 
 .title {
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 12px;
 }
 
 .block {
-    background: #f0f0f0;
-    padding: 14px;
-    margin-bottom: 10px;
+    background: #f1f1f1;
+    padding: 16px;
     border-radius: 6px;
+    margin-bottom: 12px;
     line-height: 1.6;
 }
 
 .item {
-    background: #f0f0f0;
-    padding: 14px;
-    margin-bottom: 12px;
+    background: #f1f1f1;
+    padding: 16px;
     border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .item-num {
     color: #ff4d00;
     font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     display: block;
 }
 
-.item-body {
-    display: block;
-}
-
-.item-title {
-    margin: 0 0 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-.item-text {
-    margin: 0;
-    line-height: 1.6;
+.impact {
+    margin-top: 10px;
+    color: #333;
 }
 
 .bourse {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    margin-bottom: 6px;
     font-size: 14px;
-    margin-bottom: 8px;
-    padding: 4px 0;
 }
 
 .highlight {
@@ -100,30 +80,19 @@ h1 {
     color: #fff;
     padding: 16px;
     border-radius: 6px;
-    line-height: 1.6;
+}
+
+.question {
+    background: #fff3cd;
+    padding: 14px;
+    border-radius: 6px;
 }
 
 .small {
     font-size: 12px;
     color: #777;
-    line-height: 1.5;
 }
 
-.question {
-    background: #fff3cd;
-    padding: 15px;
-    border-radius: 6px;
-    line-height: 1.6;
-}
-
-a {
-    color: #0a58ca;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 </style>
 </head>
 
@@ -131,136 +100,105 @@ a:hover {
 
 <div class="container">
 
-    <h1>BRIEF DU PEUPLE</h1>
-    <p class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</p>
-    <p class="date">11/04/2026</p>
+<h1>BRIEF DU PEUPLE</h1>
+<p class="tagline">5 minutes pour comprendre ce qui t’impacte vraiment.</p>
+<p class="small">11/04/2026</p>
 
-    <!-- LE VRAI -->
-    <div class="section">
-        <div class="title">📌 LE VRAI</div>
-        
-<div class="item">
-  <span class="item-num">01</span>
-  <div class="item-body">
-    <p class="item-title"><a href="https://www.lemonde.fr/les-decodeurs/article/2026/04/11/la-carte-des-prix-des-carburants-dans-toutes-les-stations-service-de-france_6670140_4355771.html" target="_blank" rel="noopener noreferrer">La carte des prix des carburants dans toutes les stations-service de France</a></p>
-    <p class="item-text">→ impact possible sur le plein, le transport ou les factures.</p>
-  </div>
-</div>
-
+<!-- ESSENTIEL -->
+<div class="section">
+<div class="title">📌 À RETENIR AUJOURD’HUI</div>
 
 <div class="item">
-  <span class="item-num">02</span>
-  <div class="item-body">
-    <p class="item-title"><a href="https://www.lemonde.fr/economie/article/2026/04/11/en-corse-apres-un-blocus-expres-des-ports-les-pecheurs-obtiennent-des-aides-sur-le-prix-du-carburant_6679349_3234.html" target="_blank" rel="noopener noreferrer">En Corse, après un blocus exprès des ports, les pêcheurs obtiennent des aides sur le prix du carburant</a></p>
-    <p class="item-text">→ impact possible sur le plein, le transport ou les factures.</p>
-  </div>
+<span class="item-num">01</span>
+<strong>{{TITRE_1}}</strong>
+<p class="impact">{{IMPACT_1}}</p>
 </div>
-
 
 <div class="item">
-  <span class="item-num">03</span>
-  <div class="item-body">
-    <p class="item-title"><a href="https://www.franceinfo.fr/replay-radio/c-est-mon-budget/declaration-de-revenus-2026-ce-qui-change-pour-les-couples-et-les-points-a-verifier_7899896.html#xtor=RSS-3-%5Bgeneral%5D" target="_blank" rel="noopener noreferrer">Déclaration de revenus 2026 : ce qui change pour les couples et les points à vérifier</a></p>
-    <p class="item-text">→ impact possible sur les crédits et le coût de l&#x27;argent.</p>
-  </div>
+<span class="item-num">02</span>
+<strong>{{TITRE_2}}</strong>
+<p class="impact">{{IMPACT_2}}</p>
 </div>
 
-    </div>
+<div class="item">
+<span class="item-num">03</span>
+<strong>{{TITRE_3}}</strong>
+<p class="impact">{{IMPACT_3}}</p>
+</div>
 
-    <!-- SOUS LA SURFACE -->
-    <div class="section">
-        <div class="title">🔍 SOUS LA SURFACE</div>
-        <div class="block">
-            <strong>La carte des prix des carburants dans toutes les stations-service de France</strong><br><br>
-            Le sujet du jour part de : La carte des prix des carburants dans toutes les stations-service de France. Derrière le titre, il faut regarder les effets concrets, ce qui est confirmé, et ce qui relève encore du bruit. Le bon réflexe est de traduire l’info en impact réel.
-        </div>
-    </div>
+</div>
 
-    <!-- ACTION -->
-    <div class="section">
-        <div class="title">💡 T’AS CARTE EN MAIN</div>
-        <div class="block">
-            <strong>Surveille tes dépenses transport</strong><br><br>
-            Si une baisse est annoncée, évite de payer dans la précipitation. Compare les prix autour de toi avant un gros plein.
-        </div>
-    </div>
+<!-- ANALYSE -->
+<div class="section">
+<div class="title">🔍 CE QUI SE CACHE DERRIÈRE</div>
+<div class="block">
+<strong>La carte des prix des carburants dans toutes les stations-service de France</strong><br><br>
+Le sujet du jour part de : La carte des prix des carburants dans toutes les stations-service de France. Derrière le titre, il faut regarder les effets concrets, ce qui est confirmé, et ce qui relève encore du bruit. Le bon réflexe est de traduire l’info en impact réel.
+</div>
+</div>
 
-    <!-- MONDE -->
-    <div class="section">
-        <div class="title">🌍 LE MONDE SANS FILTRE</div>
-        <div class="block">En Hongrie, au concert « pour la fin du système », « cette jeunesse qui se préoccupe de politique, c’est du jamais vu » → à surveiller pour comprendre ce que ça change vraiment.</div>
-        <div class="block">Guerre en Iran : la reconversion antidrone du vieil avion américain « tueur de chars », l’A-10 Warthog, un « exemple d’adaptation » pour les armées occidentales ? → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
-        <div class="block">Restitution des îles Chagos à l’île Maurice : le Royaume-Uni suspend son projet, faute de « soutien » américain → à surveiller pour comprendre ce que ça change vraiment.</div>
-    </div>
+<!-- ACTION -->
+<div class="section">
+<div class="title">💡 CE QUE TU PEUX FAIRE</div>
+<div class="block">
+<strong>Surveille tes dépenses transport</strong><br><br>
+Si une baisse est annoncée, évite de payer dans la précipitation. Compare les prix autour de toi avant un gros plein.
+</div>
+</div>
 
-    <!-- BOURSE -->
-    <div class="section">
-        <div class="title">💸 LA BOURSE EN 30 SECONDES</div>
+<!-- MONDE -->
+<div class="section">
+<div class="title">🌍 À SURVEILLER</div>
+<div class="block">EN DIRECT, guerre au Moyen-Orient : la délégation iranienne a rencontré le premier ministre pakistanais, annonce la télévision d’Etat iranienne → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
+<div class="block">En Hongrie, au concert « pour la fin du système », « cette jeunesse qui se préoccupe de politique, c’est du jamais-vu » → à surveiller pour comprendre ce que ça change vraiment.</div>
+<div class="block">Guerre en Iran : la reconversion antidrone du vieil avion américain « tueur de chars », l’A-10 Warthog, un « exemple d’adaptation » pour les armées occidentales ? → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
+</div>
 
-        <div class="bourse">
-            <span>S&P 500</span>
-            <span>À surveiller selon l’ambiance économique du jour.</span>
-        </div>
+<!-- BOURSE -->
+<div class="section">
+<div class="title">💸 EN 30 SECONDES</div>
 
-        <div class="bourse">
-            <span>Nasdaq</span>
-            <span>Utile pour sentir la température des marchés tech.</span>
-        </div>
+<div class="bourse"><span>S&P 500</span><span>À surveiller selon l’ambiance économique du jour.</span></div>
+<div class="bourse"><span>Nasdaq</span><span>Utile pour sentir la température des marchés tech.</span></div>
+<div class="bourse"><span>Bitcoin</span><span>À suivre sans en faire une vérité absolue.</span></div>
+<div class="bourse"><span>Pétrole</span><span>Le pétrole reste un point clé pour le carburant.</span></div>
 
-        <div class="bourse">
-            <span>Bitcoin</span>
-            <span>À suivre sans en faire une vérité absolue.</span>
-        </div>
+<p class="small">Impact réel : les taux et l’énergie sont deux choses à surveiller de près.</p>
+</div>
 
-        <div class="bourse">
-            <span>Pétrole</span>
-            <span>Le pétrole reste un point clé pour le carburant.</span>
-        </div>
+<!-- ASTUCE -->
+<div class="section">
+<div class="title">🛡️ ASTUCE UTILE</div>
+<div class="block">
+<strong>Congés : évite de perdre des jours</strong><br><br>
+{{SOUV_TEXTE}}<br><br>
+<span class="small">À vérifier selon ton entreprise</span>
+</div>
+</div>
 
-        <div class="small">Impact réel : les taux et l’énergie sont deux choses à surveiller de près.</div>
-    </div>
+<!-- TENDANCES -->
+<div class="section">
+<div class="title">📊 CE QUI PRÉOCCUPE EN CE MOMENT</div>
+<div class="block">🔹 Inflation</div>
+<div class="block">🔹 Carburant</div>
+<div class="block">🔹 Impôts</div>
+</div>
 
-    <!-- SOUVERAINETE -->
-    <div class="section">
-        <div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
-        <div class="block">
-            <strong>Congés : évite de perdre des jours</strong><br><br>
+<!-- QUESTION -->
+<div class="section">
+<div class="title">🗣️ QUESTION DU MOIS</div>
+<div class="question">
+Vous bossez dans quoi ? Répondez directement à ce mail.
+</div>
+</div>
 
-            Déjà évoqué — toujours utile aujourd’hui<br><br>
-
-            Certaines entreprises comptent du lundi au samedi<br><br>
-
-            Ce que ça change :<br>- perte de jours possible<br>- compteur impacté<br><br>
-
-            Ce que tu peux faire :<br>- vérifier ton contrat<br>- adapter tes jours<br><br>
-
-            <span class="small">À vérifier selon ton entreprise</span>
-        </div>
-    </div>
-
-    <!-- SUJETS -->
-    <div class="section">
-        <div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
-        <div class="block">🔹 Inflation</div>
-        <div class="block">🔹 Carburant</div>
-        <div class="block">🔹 Impôts</div>
-    </div>
-
-    <!-- QUESTION -->
-    <div class="section">
-        <div class="title">🗣️ QUESTION DU PEUPLE</div>
-        <div class="question">
-            Vous bossez dans quoi ? Répondez directement à ce mail.
-        </div>
-    </div>
-
-    <!-- PUNCHLINE -->
-    <div class="section">
-        <div class="title">⚡ LA PUNCHLINE</div>
-        <div class="highlight">
-            Ce que tu ne comprends pas te contrôle.
-        </div>
-    </div>
+<!-- PUNCHLINE -->
+<div class="section">
+<div class="title">⚡ À RETENIR</div>
+<div class="highlight">
+Ce que tu ne comprends pas te contrôle.
+</div>
+</div>
 
 </div>
 
