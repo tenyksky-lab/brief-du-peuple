@@ -6,23 +6,124 @@
 <title>Brief du Peuple</title>
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f5f5;}
-.container {max-width:600px;margin:auto;background:#fff;padding:20px;}
-h1 {font-size:28px;margin-bottom:5px;}
-.tagline {color:#777;font-size:14px;margin-bottom:10px;}
-.date {font-size:12px;color:#999;margin-bottom:20px;}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
 
-.section {margin-bottom:25px;}
-.title {font-weight:bold;margin-bottom:10px;}
-.block {background:#f0f0f0;padding:12px;margin-bottom:10px;border-radius:5px;}
+.container {
+    max-width: 680px;
+    margin: auto;
+    background: #ffffff;
+    padding: 24px;
+}
 
-.item {background:#f0f0f0;padding:10px;margin-bottom:10px;border-radius:5px;}
-.item-num {color:#ff3c00;font-weight:bold;margin-right:10px;}
+h1 {
+    font-size: 28px;
+    margin: 0 0 6px 0;
+}
 
-.bourse {display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px;}
-.highlight {background:#000;color:#fff;padding:15px;border-radius:5px;}
-.small {font-size:12px;color:#888;}
-.question {background:#fff3cd;padding:15px;border-radius:5px;}
+.tagline {
+    color: #777;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.date {
+    font-size: 12px;
+    color: #999;
+    margin: 0 0 22px 0;
+}
+
+.section {
+    margin-bottom: 28px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.block {
+    background: #f0f0f0;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.item {
+    background: #f0f0f0;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+.item-num {
+    color: #ff4d00;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.item-body {
+    display: block;
+}
+
+.item-title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.item-text {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.bourse {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 4px 0;
+}
+
+.highlight {
+    background: #000;
+    color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.small {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.question {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0a58ca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 
@@ -30,14 +131,14 @@ h1 {font-size:28px;margin-bottom:5px;}
 
 <div class="container">
 
-<h1>BRIEF DU PEUPLE</h1>
-<div class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</div>
-<div class="date">11/04/2026</div>
+    <h1>BRIEF DU PEUPLE</h1>
+    <p class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</p>
+    <p class="date">11/04/2026</p>
 
-<!-- LE VRAI -->
-<div class="section">
-<div class="title">📌 LE VRAI</div>
-
+    <!-- LE VRAI -->
+    <div class="section">
+        <div class="title">📌 LE VRAI</div>
+        
 <div class="item">
   <span class="item-num">01</span>
   <div class="item-body">
@@ -64,90 +165,102 @@ h1 {font-size:28px;margin-bottom:5px;}
   </div>
 </div>
 
-</div>
+    </div>
 
-<!-- SOUS LA SURFACE -->
-<div class="section">
-<div class="title">🔍 SOUS LA SURFACE</div>
-<div class="block">
-<strong>La carte des prix des carburants dans toutes les stations-service de France</strong><br><br>
-Le sujet du jour part de : La carte des prix des carburants dans toutes les stations-service de France. Derrière le titre, il faut regarder les effets concrets, ce qui est confirmé, et ce qui relève encore du bruit. Le bon réflexe est de traduire l’info en impact réel.
-</div>
-</div>
+    <!-- SOUS LA SURFACE -->
+    <div class="section">
+        <div class="title">🔍 SOUS LA SURFACE</div>
+        <div class="block">
+            <strong>La carte des prix des carburants dans toutes les stations-service de France</strong><br><br>
+            Le sujet du jour part de : La carte des prix des carburants dans toutes les stations-service de France. Derrière le titre, il faut regarder les effets concrets, ce qui est confirmé, et ce qui relève encore du bruit. Le bon réflexe est de traduire l’info en impact réel.
+        </div>
+    </div>
 
-<!-- ACTION -->
-<div class="section">
-<div class="title">💡 T’AS CARTE EN MAIN</div>
-<div class="block">
-<strong>Surveille tes dépenses transport</strong><br><br>
-Si une baisse est annoncée, évite de payer dans la précipitation. Compare les prix autour de toi avant un gros plein.
-</div>
-</div>
+    <!-- ACTION -->
+    <div class="section">
+        <div class="title">💡 T’AS CARTE EN MAIN</div>
+        <div class="block">
+            <strong>Surveille tes dépenses transport</strong><br><br>
+            Si une baisse est annoncée, évite de payer dans la précipitation. Compare les prix autour de toi avant un gros plein.
+        </div>
+    </div>
 
-<!-- MONDE -->
-<div class="section">
-<div class="title">🌍 LE MONDE SANS FILTRE</div>
-<div class="block">Restitution des îles Chagos à l’île Maurice : le Royaume-Uni suspend son projet, faute de « soutien » américain → à surveiller pour comprendre ce que ça change vraiment.</div>
-<div class="block">Les Libanais enterrent les morts du « mercredi noir » : « Nous ne sommes pas que des chiffres » → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
-<div class="block">Mohammad Bagher Ghalibaf, l’homme-clé des négociations iraniennes avec Washington → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
-</div>
+    <!-- MONDE -->
+    <div class="section">
+        <div class="title">🌍 LE MONDE SANS FILTRE</div>
+        <div class="block">En Hongrie, au concert « pour la fin du système », « cette jeunesse qui se préoccupe de politique, c’est du jamais vu » → à surveiller pour comprendre ce que ça change vraiment.</div>
+        <div class="block">Guerre en Iran : la reconversion antidrone du vieil avion américain « tueur de chars », l’A-10 Warthog, un « exemple d’adaptation » pour les armées occidentales ? → à surveiller pour l&#x27;énergie, les marchés et les prix.</div>
+        <div class="block">Restitution des îles Chagos à l’île Maurice : le Royaume-Uni suspend son projet, faute de « soutien » américain → à surveiller pour comprendre ce que ça change vraiment.</div>
+    </div>
 
-<!-- BOURSE -->
-<div class="section">
-<div class="title">💸 LA BOURSE EN 30 SECONDES</div>
+    <!-- BOURSE -->
+    <div class="section">
+        <div class="title">💸 LA BOURSE EN 30 SECONDES</div>
 
-<div class="bourse">Ligne 1 <span>À surveiller selon l’ambiance économique du jour.</span></div>
-<div class="bourse">Ligne 2 <span>Utile pour sentir la température des marchés tech.</span></div>
-<div class="bourse">Ligne 3 <span>À suivre sans en faire une vérité absolue.</span></div>
-<div class="bourse">Ligne 4 <span>Le pétrole reste un point clé pour le carburant.</span></div>
+        <div class="bourse">
+            <span>S&P 500</span>
+            <span>À surveiller selon l’ambiance économique du jour.</span>
+        </div>
 
-<div class="small">Impact réel : les taux et l’énergie sont deux choses à surveiller de près.</div>
-</div>
+        <div class="bourse">
+            <span>Nasdaq</span>
+            <span>Utile pour sentir la température des marchés tech.</span>
+        </div>
 
-<!-- SOUVERAINETE -->
-<div class="section">
-<div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
+        <div class="bourse">
+            <span>Bitcoin</span>
+            <span>À suivre sans en faire une vérité absolue.</span>
+        </div>
 
-<div class="block">
-<strong>Congés : évite de perdre des jours</strong><br><br>
+        <div class="bourse">
+            <span>Pétrole</span>
+            <span>Le pétrole reste un point clé pour le carburant.</span>
+        </div>
 
-Déjà évoqué — toujours utile aujourd’hui<br><br>
-Certaines entreprises comptent du lundi au samedi<br><br>
+        <div class="small">Impact réel : les taux et l’énergie sont deux choses à surveiller de près.</div>
+    </div>
 
-Ce que ça change :<br>- perte de jours possible<br>- compteur impacté<br><br>
+    <!-- SOUVERAINETE -->
+    <div class="section">
+        <div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
+        <div class="block">
+            <strong>Congés : évite de perdre des jours</strong><br><br>
 
-Ce que tu peux faire :<br>- vérifier ton contrat<br>- adapter tes jours<br><br>
+            Déjà évoqué — toujours utile aujourd’hui<br><br>
 
-<span class="small">À vérifier selon ton entreprise</span>
-</div>
-</div>
+            Certaines entreprises comptent du lundi au samedi<br><br>
 
-<!-- SUJETS -->
-<div class="section">
-<div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
+            Ce que ça change :<br>- perte de jours possible<br>- compteur impacté<br><br>
 
-<div class="block">🔹 Inflation</div>
-<div class="block">🔹 Carburant</div>
-<div class="block">🔹 Impôts</div>
-</div>
+            Ce que tu peux faire :<br>- vérifier ton contrat<br>- adapter tes jours<br><br>
 
-<!-- QUESTION -->
-<div class="section">
-<div class="title">🗣️ QUESTION DU PEUPLE</div>
+            <span class="small">À vérifier selon ton entreprise</span>
+        </div>
+    </div>
 
-<div class="question">
-Vous bossez dans quoi ? Répondez directement à ce mail.
-</div>
-</div>
+    <!-- SUJETS -->
+    <div class="section">
+        <div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
+        <div class="block">🔹 Inflation</div>
+        <div class="block">🔹 Carburant</div>
+        <div class="block">🔹 Impôts</div>
+    </div>
 
-<!-- PUNCHLINE -->
-<div class="section">
-<div class="title">⚡ LA PUNCHLINE</div>
+    <!-- QUESTION -->
+    <div class="section">
+        <div class="title">🗣️ QUESTION DU PEUPLE</div>
+        <div class="question">
+            Vous bossez dans quoi ? Répondez directement à ce mail.
+        </div>
+    </div>
 
-<div class="highlight">
-Ce que tu ne comprends pas te contrôle.
-</div>
-</div>
+    <!-- PUNCHLINE -->
+    <div class="section">
+        <div class="title">⚡ LA PUNCHLINE</div>
+        <div class="highlight">
+            Ce que tu ne comprends pas te contrôle.
+        </div>
+    </div>
 
 </div>
 
