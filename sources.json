@@ -1,0 +1,39 @@
+{
+  "feeds": [
+    {
+      "name": "Reuters World",
+      "url": "https://feeds.reuters.com/Reuters/worldNews",
+      "category": "international"
+    },
+    {
+      "name": "Reuters Business",
+      "url": "https://feeds.reuters.com/reuters/businessNews",
+      "category": "economie"
+    },
+    {
+      "name": "Le Monde International",
+      "url": "https://www.lemonde.fr/international/rss_full.xml",
+      "category": "international"
+    },
+    {
+      "name": "Le Monde Economie",
+      "url": "https://www.lemonde.fr/economie/rss_full.xml",
+      "category": "economie"
+    },
+    {
+      "name": "Franceinfo Eco",
+      "url": "https://www.francetvinfo.fr/economie.rss",
+      "category": "economie"
+    },
+    {
+      "name": "Franceinfo Monde",
+      "url": "https://www.francetvinfo.fr/monde.rss",
+      "category": "international"
+    },
+    {
+      "name": "Franceinfo Societe",
+      "url": "https://www.francetvinfo.fr/societe.rss",
+      "category": "societe"
+    }
+  ]
+}
