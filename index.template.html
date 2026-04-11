@@ -66,6 +66,7 @@ h1 {
 .impact {
     margin-top: 10px;
     color: #333;
+    line-height: 1.6;
 }
 
 .bourse {
@@ -73,6 +74,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 6px;
     font-size: 14px;
+    gap: 12px;
 }
 
 .highlight {
@@ -80,12 +82,14 @@ h1 {
     color: #fff;
     padding: 16px;
     border-radius: 6px;
+    line-height: 1.6;
 }
 
 .question {
     background: #fff3cd;
     padding: 14px;
     border-radius: 6px;
+    line-height: 1.6;
 }
 
 .small {
@@ -104,7 +108,6 @@ h1 {
 <p class="tagline">5 minutes pour comprendre ce qui t’impacte vraiment.</p>
 <p class="small">{{DATE_LONG}}</p>
 
-<!-- ESSENTIEL -->
 <div class="section">
 <div class="title">📌 À RETENIR AUJOURD’HUI</div>
 
@@ -125,10 +128,8 @@ h1 {
 <strong>{{TITRE_3}}</strong>
 <p class="impact">{{IMPACT_3}}</p>
 </div>
-
 </div>
 
-<!-- ANALYSE -->
 <div class="section">
 <div class="title">🔍 CE QUI SE CACHE DERRIÈRE</div>
 <div class="block">
@@ -137,7 +138,6 @@ h1 {
 </div>
 </div>
 
-<!-- ACTION -->
 <div class="section">
 <div class="title">💡 CE QUE TU PEUX FAIRE</div>
 <div class="block">
@@ -146,7 +146,6 @@ h1 {
 </div>
 </div>
 
-<!-- MONDE -->
 <div class="section">
 <div class="title">🌍 À SURVEILLER</div>
 <div class="block">{{MONDE_1}}</div>
@@ -154,19 +153,23 @@ h1 {
 <div class="block">{{MONDE_3}}</div>
 </div>
 
-<!-- BOURSE -->
 <div class="section">
 <div class="title">💸 EN 30 SECONDES</div>
-
 <div class="bourse"><span>S&P 500</span><span>{{BOURSE_1}}</span></div>
 <div class="bourse"><span>Nasdaq</span><span>{{BOURSE_2}}</span></div>
 <div class="bourse"><span>Bitcoin</span><span>{{BOURSE_3}}</span></div>
 <div class="bourse"><span>Pétrole</span><span>{{BOURSE_4}}</span></div>
-
 <p class="small">{{BOURSE_5}}</p>
 </div>
 
-<!-- ASTUCE -->
+<div class="section">
+<div class="title">🌿 ASTUCE DE SAISON</div>
+<div class="block">
+<strong>{{SAISON_TITRE}}</strong><br><br>
+{{SAISON_TEXTE}}
+</div>
+</div>
+
 <div class="section">
 <div class="title">🛡️ ASTUCE UTILE</div>
 <div class="block">
@@ -176,7 +179,6 @@ h1 {
 </div>
 </div>
 
-<!-- TENDANCES -->
 <div class="section">
 <div class="title">📊 CE QUI PRÉOCCUPE EN CE MOMENT</div>
 <div class="block">🔹 {{TOPIC_1}}</div>
@@ -184,20 +186,14 @@ h1 {
 <div class="block">🔹 {{TOPIC_3}}</div>
 </div>
 
-<!-- QUESTION -->
 <div class="section">
 <div class="title">🗣️ QUESTION DU MOIS</div>
-<div class="question">
-{{QUESTION_DU_PEUPLE}}
-</div>
+<div class="question">{{QUESTION_DU_PEUPLE}}</div>
 </div>
 
-<!-- PUNCHLINE -->
 <div class="section">
 <div class="title">⚡ À RETENIR</div>
-<div class="highlight">
-{{PUNCHLINE}}
-</div>
+<div class="highlight">{{PUNCHLINE}}</div>
 </div>
 
 </div>
