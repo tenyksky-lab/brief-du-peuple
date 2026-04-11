@@ -6,73 +6,23 @@
 <title>Brief du Peuple</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5;}
+.container {max-width:600px;margin:auto;background:#fff;padding:20px;}
+h1 {font-size:28px;margin-bottom:5px;}
+.tagline {color:#777;font-size:14px;margin-bottom:10px;}
+.date {font-size:12px;color:#999;margin-bottom:20px;}
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: #ffffff;
-    padding: 20px;
-}
+.section {margin-bottom:25px;}
+.title {font-weight:bold;margin-bottom:10px;}
+.block {background:#f0f0f0;padding:12px;margin-bottom:10px;border-radius:5px;}
 
-h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
+.item {background:#f0f0f0;padding:10px;margin-bottom:10px;border-radius:5px;}
+.item-num {color:#ff3c00;font-weight:bold;margin-right:10px;}
 
-.tagline {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.section {
-    margin-bottom: 25px;
-}
-
-.title {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.block {
-    background: #f0f0f0;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.bourse {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.green { color: green; }
-.red { color: red; }
-
-.highlight {
-    background: #000;
-    color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.small {
-    font-size: 12px;
-    color: #888;
-}
-
-.question {
-    background: #fff3cd;
-    padding: 15px;
-    border-radius: 5px;
-}
+.bourse {display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px;}
+.highlight {background:#000;color:#fff;padding:15px;border-radius:5px;}
+.small {font-size:12px;color:#888;}
+.question {background:#fff3cd;padding:15px;border-radius:5px;}
 </style>
 </head>
 
@@ -82,32 +32,24 @@ h1 {
 
 <h1>BRIEF DU PEUPLE</h1>
 <div class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</div>
+<div class="date">11 April 2026</div>
 
 <!-- LE VRAI -->
 <div class="section">
 <div class="title">📌 LE VRAI</div>
 
-<div class="block">
-<strong>Info 1</strong><br>
-Explication simple + impact réel
-</div>
+<div class="item"><span class="item-num">01</span> Info importante du jour</div>
+<div class="item"><span class="item-num">02</span> Deuxième info clé</div>
+<div class="item"><span class="item-num">03</span> Troisième info utile</div>
 
-<div class="block">
-<strong>Info 2</strong><br>
-Explication simple + impact réel
-</div>
-
-<div class="block">
-<strong>Info 3</strong><br>
-Explication simple + impact réel
-</div>
 </div>
 
 <!-- SOUS LA SURFACE -->
 <div class="section">
 <div class="title">🔍 SOUS LA SURFACE</div>
 <div class="block">
-Analyse rapide d’un sujet important
+<strong>Ce qu'on ne te dit pas</strong><br><br>
+Analyse simple d’un sujet important.
 </div>
 </div>
 
@@ -115,22 +57,29 @@ Analyse rapide d’un sujet important
 <div class="section">
 <div class="title">💡 T’AS CARTE EN MAIN</div>
 <div class="block">
-Action concrète à faire aujourd’hui
+<strong>Ce que tu peux faire</strong><br><br>
+Une action concrète aujourd’hui.
 </div>
+</div>
+
+<!-- MONDE -->
+<div class="section">
+<div class="title">🌍 LE MONDE SANS FILTRE</div>
+<div class="block">Info mondiale 1</div>
+<div class="block">Info mondiale 2</div>
+<div class="block">Info mondiale 3</div>
 </div>
 
 <!-- BOURSE -->
 <div class="section">
 <div class="title">💸 LA BOURSE EN 30 SECONDES</div>
 
-<div class="bourse">S&P 500 <span class="green">+0.62%</span></div>
-<div class="bourse">CAC 40 <span class="red">-0.22%</span></div>
-<div class="bourse">Bitcoin <span class="green">+0.61%</span></div>
-<div class="bourse">Pétrole <span class="green">+1.75%</span></div>
+<div class="bourse">Ligne 1 <span>+0.5%</span></div>
+<div class="bourse">Ligne 2 <span>-0.2%</span></div>
+<div class="bourse">Ligne 3 <span>+1.2%</span></div>
+<div class="bourse">Ligne 4 <span>+0.8%</span></div>
 
-<div class="small">
-Impact : les marchés restent stables malgré les tensions
-</div>
+<div class="small">Marché stable aujourd’hui.</div>
 </div>
 
 <!-- SOUVERAINETE -->
@@ -138,21 +87,16 @@ Impact : les marchés restent stables malgré les tensions
 <div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
 
 <div class="block">
-<strong>📅 Congés : évite de perdre des jours</strong><br><br>
+<strong>Congés : évite de perdre des jours</strong><br><br>
 
-👉 Déjà évoqué — toujours utile aujourd’hui<br><br>
+Déjà évoqué — toujours utile<br><br>
+Certaines entreprises comptent du lundi au samedi<br><br>
 
-👉 Certaines entreprises comptent du lundi au samedi<br><br>
+- perte de jours possible<br>- compteur impacté<br><br>
 
-👉 Ce que ça change :<br>
-- perte de jours possible<br>
-- compteur impacté<br><br>
+- vérifier ton contrat<br>- adapter tes jours<br><br>
 
-👉 Ce que tu peux faire :<br>
-- vérifier ton contrat<br>
-- adapter tes jours<br><br>
-
-<span class="small">⚠️ À vérifier selon ton entreprise</span>
+<span class="small">À vérifier selon ton entreprise</span>
 </div>
 </div>
 
@@ -170,18 +114,8 @@ Impact : les marchés restent stables malgré les tensions
 <div class="title">🗣️ QUESTION DU PEUPLE</div>
 
 <div class="question">
-👉 Vous bossez dans quoi ?<br><br>
-Répondez directement à ce mail
+Vous bossez dans quoi ?
 </div>
-</div>
-
-<!-- MONDE -->
-<div class="section">
-<div class="title">🌍 LE MONDE SANS FILTRE</div>
-
-<div class="block">Info rapide 1</div>
-<div class="block">Info rapide 2</div>
-<div class="block">Info rapide 3</div>
 </div>
 
 <!-- PUNCHLINE -->
@@ -189,7 +123,7 @@ Répondez directement à ce mail
 <div class="title">⚡ LA PUNCHLINE</div>
 
 <div class="highlight">
-“Ce que tu ne comprends pas te contrôle.”
+Ce que tu ne comprends pas te contrôle.
 </div>
 </div>
 
