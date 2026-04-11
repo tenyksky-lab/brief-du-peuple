@@ -6,23 +6,124 @@
 <title>Brief du Peuple</title>
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f5f5;}
-.container {max-width:600px;margin:auto;background:#fff;padding:20px;}
-h1 {font-size:28px;margin-bottom:5px;}
-.tagline {color:#777;font-size:14px;margin-bottom:10px;}
-.date {font-size:12px;color:#999;margin-bottom:20px;}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
 
-.section {margin-bottom:25px;}
-.title {font-weight:bold;margin-bottom:10px;}
-.block {background:#f0f0f0;padding:12px;margin-bottom:10px;border-radius:5px;}
+.container {
+    max-width: 680px;
+    margin: auto;
+    background: #ffffff;
+    padding: 24px;
+}
 
-.item {background:#f0f0f0;padding:10px;margin-bottom:10px;border-radius:5px;}
-.item-num {color:#ff3c00;font-weight:bold;margin-right:10px;}
+h1 {
+    font-size: 28px;
+    margin: 0 0 6px 0;
+}
 
-.bourse {display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px;}
-.highlight {background:#000;color:#fff;padding:15px;border-radius:5px;}
-.small {font-size:12px;color:#888;}
-.question {background:#fff3cd;padding:15px;border-radius:5px;}
+.tagline {
+    color: #777;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.date {
+    font-size: 12px;
+    color: #999;
+    margin: 0 0 22px 0;
+}
+
+.section {
+    margin-bottom: 28px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.block {
+    background: #f0f0f0;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.item {
+    background: #f0f0f0;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+.item-num {
+    color: #ff4d00;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.item-body {
+    display: block;
+}
+
+.item-title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.item-text {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.bourse {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 4px 0;
+}
+
+.highlight {
+    background: #000;
+    color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.small {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.question {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0a58ca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 
@@ -30,98 +131,110 @@ h1 {font-size:28px;margin-bottom:5px;}
 
 <div class="container">
 
-<h1>BRIEF DU PEUPLE</h1>
-<div class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</div>
-<div class="date">{{DATE_LONG}}</div>
+    <h1>BRIEF DU PEUPLE</h1>
+    <p class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</p>
+    <p class="date">{{DATE_LONG}}</p>
 
-<!-- LE VRAI -->
-<div class="section">
-<div class="title">📌 LE VRAI</div>
-{{LE_VRAI_ITEMS}}
-</div>
+    <!-- LE VRAI -->
+    <div class="section">
+        <div class="title">📌 LE VRAI</div>
+        {{LE_VRAI_ITEMS}}
+    </div>
 
-<!-- SOUS LA SURFACE -->
-<div class="section">
-<div class="title">🔍 SOUS LA SURFACE</div>
-<div class="block">
-<strong>{{SOUS_SURFACE_TITRE}}</strong><br><br>
-{{SOUS_SURFACE_TEXTE}}
-</div>
-</div>
+    <!-- SOUS LA SURFACE -->
+    <div class="section">
+        <div class="title">🔍 SOUS LA SURFACE</div>
+        <div class="block">
+            <strong>{{SOUS_SURFACE_TITRE}}</strong><br><br>
+            {{SOUS_SURFACE_TEXTE}}
+        </div>
+    </div>
 
-<!-- ACTION -->
-<div class="section">
-<div class="title">💡 T’AS CARTE EN MAIN</div>
-<div class="block">
-<strong>{{ACTION_TITRE}}</strong><br><br>
-{{ACTION_TEXTE}}
-</div>
-</div>
+    <!-- ACTION -->
+    <div class="section">
+        <div class="title">💡 T’AS CARTE EN MAIN</div>
+        <div class="block">
+            <strong>{{ACTION_TITRE}}</strong><br><br>
+            {{ACTION_TEXTE}}
+        </div>
+    </div>
 
-<!-- MONDE -->
-<div class="section">
-<div class="title">🌍 LE MONDE SANS FILTRE</div>
-<div class="block">{{MONDE_1}}</div>
-<div class="block">{{MONDE_2}}</div>
-<div class="block">{{MONDE_3}}</div>
-</div>
+    <!-- MONDE -->
+    <div class="section">
+        <div class="title">🌍 LE MONDE SANS FILTRE</div>
+        <div class="block">{{MONDE_1}}</div>
+        <div class="block">{{MONDE_2}}</div>
+        <div class="block">{{MONDE_3}}</div>
+    </div>
 
-<!-- BOURSE -->
-<div class="section">
-<div class="title">💸 LA BOURSE EN 30 SECONDES</div>
+    <!-- BOURSE -->
+    <div class="section">
+        <div class="title">💸 LA BOURSE EN 30 SECONDES</div>
 
-<div class="bourse">Ligne 1 <span>{{BOURSE_1}}</span></div>
-<div class="bourse">Ligne 2 <span>{{BOURSE_2}}</span></div>
-<div class="bourse">Ligne 3 <span>{{BOURSE_3}}</span></div>
-<div class="bourse">Ligne 4 <span>{{BOURSE_4}}</span></div>
+        <div class="bourse">
+            <span>S&P 500</span>
+            <span>{{BOURSE_1}}</span>
+        </div>
 
-<div class="small">{{BOURSE_5}}</div>
-</div>
+        <div class="bourse">
+            <span>Nasdaq</span>
+            <span>{{BOURSE_2}}</span>
+        </div>
 
-<!-- SOUVERAINETE -->
-<div class="section">
-<div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
+        <div class="bourse">
+            <span>Bitcoin</span>
+            <span>{{BOURSE_3}}</span>
+        </div>
 
-<div class="block">
-<strong>{{SOUV_TITRE}}</strong><br><br>
+        <div class="bourse">
+            <span>Pétrole</span>
+            <span>{{BOURSE_4}}</span>
+        </div>
 
-{{SOUV_INTRO}}<br><br>
-{{SOUV_LIGNE1}}<br><br>
+        <div class="small">{{BOURSE_5}}</div>
+    </div>
 
-{{SOUV_IMPACT}}<br><br>
+    <!-- SOUVERAINETE -->
+    <div class="section">
+        <div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
+        <div class="block">
+            <strong>{{SOUV_TITRE}}</strong><br><br>
 
-{{SOUV_ACTION}}<br><br>
+            {{SOUV_INTRO}}<br><br>
 
-<span class="small">{{SOUV_NOTE}}</span>
-</div>
-</div>
+            {{SOUV_LIGNE1}}<br><br>
 
-<!-- SUJETS -->
-<div class="section">
-<div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
+            {{SOUV_IMPACT}}<br><br>
 
-<div class="block">🔹 {{TOPIC_1}}</div>
-<div class="block">🔹 {{TOPIC_2}}</div>
-<div class="block">🔹 {{TOPIC_3}}</div>
-</div>
+            {{SOUV_ACTION}}<br><br>
 
-<!-- QUESTION -->
-<div class="section">
-<div class="title">🗣️ QUESTION DU PEUPLE</div>
+            <span class="small">{{SOUV_NOTE}}</span>
+        </div>
+    </div>
 
-<div class="question">
-{{QUESTION_DU_PEUPLE}}
-</div>
-</div>
+    <!-- SUJETS -->
+    <div class="section">
+        <div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
+        <div class="block">🔹 {{TOPIC_1}}</div>
+        <div class="block">🔹 {{TOPIC_2}}</div>
+        <div class="block">🔹 {{TOPIC_3}}</div>
+    </div>
 
-<!-- PUNCHLINE -->
-<div class="section">
-<div class="title">⚡ LA PUNCHLINE</div>
+    <!-- QUESTION -->
+    <div class="section">
+        <div class="title">🗣️ QUESTION DU PEUPLE</div>
+        <div class="question">
+            {{QUESTION_DU_PEUPLE}}
+        </div>
+    </div>
 
-<div class="highlight">
-{{PUNCHLINE}}
-</div>
-</div>
+    <!-- PUNCHLINE -->
+    <div class="section">
+        <div class="title">⚡ LA PUNCHLINE</div>
+        <div class="highlight">
+            {{PUNCHLINE}}
+        </div>
+    </div>
 
 </div>
 
