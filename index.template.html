@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f4f4f4;
     color: #111;
 }
 
@@ -22,19 +22,13 @@ body {
 
 h1 {
     font-size: 28px;
-    margin: 0 0 6px 0;
+    margin: 0;
 }
 
 .tagline {
     color: #777;
     font-size: 14px;
-    margin: 0 0 10px 0;
-}
-
-.date {
-    font-size: 12px;
-    color: #999;
-    margin: 0 0 22px 0;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -42,57 +36,43 @@ h1 {
 }
 
 .title {
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 12px;
 }
 
 .block {
-    background: #f0f0f0;
-    padding: 14px;
-    margin-bottom: 10px;
+    background: #f1f1f1;
+    padding: 16px;
     border-radius: 6px;
+    margin-bottom: 12px;
     line-height: 1.6;
 }
 
 .item {
-    background: #f0f0f0;
-    padding: 14px;
-    margin-bottom: 12px;
+    background: #f1f1f1;
+    padding: 16px;
     border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .item-num {
     color: #ff4d00;
     font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     display: block;
 }
 
-.item-body {
-    display: block;
-}
-
-.item-title {
-    margin: 0 0 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-.item-text {
-    margin: 0;
-    line-height: 1.6;
+.impact {
+    margin-top: 10px;
+    color: #333;
 }
 
 .bourse {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    margin-bottom: 6px;
     font-size: 14px;
-    margin-bottom: 8px;
-    padding: 4px 0;
 }
 
 .highlight {
@@ -100,30 +80,19 @@ h1 {
     color: #fff;
     padding: 16px;
     border-radius: 6px;
-    line-height: 1.6;
+}
+
+.question {
+    background: #fff3cd;
+    padding: 14px;
+    border-radius: 6px;
 }
 
 .small {
     font-size: 12px;
     color: #777;
-    line-height: 1.5;
 }
 
-.question {
-    background: #fff3cd;
-    padding: 15px;
-    border-radius: 6px;
-    line-height: 1.6;
-}
-
-a {
-    color: #0a58ca;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 </style>
 </head>
 
@@ -131,110 +100,105 @@ a:hover {
 
 <div class="container">
 
-    <h1>BRIEF DU PEUPLE</h1>
-    <p class="tagline">5 minutes pour comprendre ce qui se passe vraiment.</p>
-    <p class="date">{{DATE_LONG}}</p>
+<h1>BRIEF DU PEUPLE</h1>
+<p class="tagline">5 minutes pour comprendre ce qui t’impacte vraiment.</p>
+<p class="small">{{DATE_LONG}}</p>
 
-    <!-- LE VRAI -->
-    <div class="section">
-        <div class="title">📌 LE VRAI</div>
-        {{LE_VRAI_ITEMS}}
-    </div>
+<!-- ESSENTIEL -->
+<div class="section">
+<div class="title">📌 À RETENIR AUJOURD’HUI</div>
 
-    <!-- SOUS LA SURFACE -->
-    <div class="section">
-        <div class="title">🔍 SOUS LA SURFACE</div>
-        <div class="block">
-            <strong>{{SOUS_SURFACE_TITRE}}</strong><br><br>
-            {{SOUS_SURFACE_TEXTE}}
-        </div>
-    </div>
+<div class="item">
+<span class="item-num">01</span>
+<strong>{{TITRE_1}}</strong>
+<p class="impact">{{IMPACT_1}}</p>
+</div>
 
-    <!-- ACTION -->
-    <div class="section">
-        <div class="title">💡 T’AS CARTE EN MAIN</div>
-        <div class="block">
-            <strong>{{ACTION_TITRE}}</strong><br><br>
-            {{ACTION_TEXTE}}
-        </div>
-    </div>
+<div class="item">
+<span class="item-num">02</span>
+<strong>{{TITRE_2}}</strong>
+<p class="impact">{{IMPACT_2}}</p>
+</div>
 
-    <!-- MONDE -->
-    <div class="section">
-        <div class="title">🌍 LE MONDE SANS FILTRE</div>
-        <div class="block">{{MONDE_1}}</div>
-        <div class="block">{{MONDE_2}}</div>
-        <div class="block">{{MONDE_3}}</div>
-    </div>
+<div class="item">
+<span class="item-num">03</span>
+<strong>{{TITRE_3}}</strong>
+<p class="impact">{{IMPACT_3}}</p>
+</div>
 
-    <!-- BOURSE -->
-    <div class="section">
-        <div class="title">💸 LA BOURSE EN 30 SECONDES</div>
+</div>
 
-        <div class="bourse">
-            <span>S&P 500</span>
-            <span>{{BOURSE_1}}</span>
-        </div>
+<!-- ANALYSE -->
+<div class="section">
+<div class="title">🔍 CE QUI SE CACHE DERRIÈRE</div>
+<div class="block">
+<strong>{{SOUS_SURFACE_TITRE}}</strong><br><br>
+{{SOUS_SURFACE_TEXTE}}
+</div>
+</div>
 
-        <div class="bourse">
-            <span>Nasdaq</span>
-            <span>{{BOURSE_2}}</span>
-        </div>
+<!-- ACTION -->
+<div class="section">
+<div class="title">💡 CE QUE TU PEUX FAIRE</div>
+<div class="block">
+<strong>{{ACTION_TITRE}}</strong><br><br>
+{{ACTION_TEXTE}}
+</div>
+</div>
 
-        <div class="bourse">
-            <span>Bitcoin</span>
-            <span>{{BOURSE_3}}</span>
-        </div>
+<!-- MONDE -->
+<div class="section">
+<div class="title">🌍 À SURVEILLER</div>
+<div class="block">{{MONDE_1}}</div>
+<div class="block">{{MONDE_2}}</div>
+<div class="block">{{MONDE_3}}</div>
+</div>
 
-        <div class="bourse">
-            <span>Pétrole</span>
-            <span>{{BOURSE_4}}</span>
-        </div>
+<!-- BOURSE -->
+<div class="section">
+<div class="title">💸 EN 30 SECONDES</div>
 
-        <div class="small">{{BOURSE_5}}</div>
-    </div>
+<div class="bourse"><span>S&P 500</span><span>{{BOURSE_1}}</span></div>
+<div class="bourse"><span>Nasdaq</span><span>{{BOURSE_2}}</span></div>
+<div class="bourse"><span>Bitcoin</span><span>{{BOURSE_3}}</span></div>
+<div class="bourse"><span>Pétrole</span><span>{{BOURSE_4}}</span></div>
 
-    <!-- SOUVERAINETE -->
-    <div class="section">
-        <div class="title">🛡️ SOUVERAINETÉ CITOYENNE</div>
-        <div class="block">
-            <strong>{{SOUV_TITRE}}</strong><br><br>
+<p class="small">{{BOURSE_5}}</p>
+</div>
 
-            {{SOUV_INTRO}}<br><br>
+<!-- ASTUCE -->
+<div class="section">
+<div class="title">🛡️ ASTUCE UTILE</div>
+<div class="block">
+<strong>{{SOUV_TITRE}}</strong><br><br>
+{{SOUV_TEXTE}}<br><br>
+<span class="small">{{SOUV_NOTE}}</span>
+</div>
+</div>
 
-            {{SOUV_LIGNE1}}<br><br>
+<!-- TENDANCES -->
+<div class="section">
+<div class="title">📊 CE QUI PRÉOCCUPE EN CE MOMENT</div>
+<div class="block">🔹 {{TOPIC_1}}</div>
+<div class="block">🔹 {{TOPIC_2}}</div>
+<div class="block">🔹 {{TOPIC_3}}</div>
+</div>
 
-            {{SOUV_IMPACT}}<br><br>
+<!-- QUESTION -->
+<div class="section">
+<div class="title">🗣️ QUESTION DU MOIS</div>
+<div class="question">
+{{QUESTION_DU_PEUPLE}}
+</div>
+</div>
 
-            {{SOUV_ACTION}}<br><br>
-
-            <span class="small">{{SOUV_NOTE}}</span>
-        </div>
-    </div>
-
-    <!-- SUJETS -->
-    <div class="section">
-        <div class="title">📊 CE QUE LES GENS VEULENT VOIR</div>
-        <div class="block">🔹 {{TOPIC_1}}</div>
-        <div class="block">🔹 {{TOPIC_2}}</div>
-        <div class="block">🔹 {{TOPIC_3}}</div>
-    </div>
-
-    <!-- QUESTION -->
-    <div class="section">
-        <div class="title">🗣️ QUESTION DU PEUPLE</div>
-        <div class="question">
-            {{QUESTION_DU_PEUPLE}}
-        </div>
-    </div>
-
-    <!-- PUNCHLINE -->
-    <div class="section">
-        <div class="title">⚡ LA PUNCHLINE</div>
-        <div class="highlight">
-            {{PUNCHLINE}}
-        </div>
-    </div>
+<!-- PUNCHLINE -->
+<div class="section">
+<div class="title">⚡ À RETENIR</div>
+<div class="highlight">
+{{PUNCHLINE}}
+</div>
+</div>
 
 </div>
 
